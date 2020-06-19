@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <div id="msg">please wait... geeting message from API.</div>
+    <script>
+        fetch('/api/')
+            .then(response => response.json())
+            .then(({ message }) => {
+                document.getElementById('msg').innerHTML = message;
+            })
+            .catch(console.error);
+    </script>
+</body>
+
+</html>

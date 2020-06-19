@@ -1,0 +1,11 @@
+{
+    "name": "api",
+    "description": "api",
+    "scripts": {
+        "start": "node index"
+    },
+    "dependencies": {
+        "bent": "^7.3.5",
+        "polka": "^0.5.2"
+    }
+}
